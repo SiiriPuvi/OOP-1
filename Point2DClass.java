@@ -32,16 +32,18 @@ public class Point2DClass {
     public void setY(float y) {
         this.y = y;
     }
+    public float[] getXY(){
+        return new float []{x,y};
+    }
+    public void setXY (float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
 
     @Override
     public String toString() {
         return super.toString();
     }
 
-    public static void main(String[] args) {
-        Point2DClass number = new Point2DClass();
-        System.out.println(number.y);
-        System.out.println(number.x);
-    }
-
 }
+
